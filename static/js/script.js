@@ -1,42 +1,52 @@
-function generateRandomInteger(min=1, max=100) {
-    const minCeiled = Math.ceil(min);
-    const maxFloored = Math.floor(max);
-    const n=Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
-    return n
-  }
+function generateRandomNumber(min=1, max=100){
+    let n=Math.random()
+    n=n*(max-min)+min
+    let Intn=Math.floor(n)
+    return Intn
+}
 
 function Sanitize(numero) {
-    nSanificate=parseInt(numero.trim());
+    let nSanificate=parseInt(numero.trim());
+    if(isNaN(nSanificate)){
+        console.log("Valore non valido")
+    }
     return nSanificate
 }
 
-let indovinato=false
-let n_tentativi=5
-const nIndovinare=generateRandomInteger();
-while (n_tentativi>0 && !indovinato) {
-    let numero=prompt("Inserisci numero: ")
-    let num=Sanitize(numero)
+function magicNumber(event){
+    let numero=document.querySelector("#guess").value
+    n=Sanitize(numero);
 
-    if(isNaN(numero))
+    if(isNaN(n) || n<=0 || n>100)
     {
-        console.log("Valore non valido")
-        n_tentativi=n_tentativi-1
+        console.log("valore non valido")
+        Indovinato=false;
+    }else if(n>nGenerato)
+    {
+        console.log("Il numero inserito è troppo grande");
+        nTentativi=nTentativi-1;
+    }else if(n<nGenerato)
+    {
+        console.log("Il numero inserito è troppo piccolo");
+        nTentativi=nTentativi-1;
+    }else if(n===nGenerato)
+    {
+        console.log("HAI VINTO!!!");
+        Indovinato=true;
+    }
+    if(nTentativi===0 && !Indovinato)
+    {
+        console.log("Hai esaurito i tentativi!")
+        console.log("Il numero era"+ nGenerato)
     }
 
-    if(numero>nIndovinare)
-    {
-        console.log("Il numero inserito è troppo grande")
-        indovinato=false
-        n_tentativi=n_tentativi-1
-    }else if(numero<nIndovinare)
-    {
-        console.log("Il numero inserito è troppo piccolo")
-        indovinato=false
-        n_tentativi=n_tentativi-1
-    }
-    else if(numero===nIndovinare)
-    {
-        console.log("Hai indovinato il numero")
-        indovinato=true
-    }
 }
+
+let nTentativi=5;
+let Indovinato=false;
+let nGenerato=generateRandomNumber();
+let n;
+
+console.log("BENVENUTO A MAGIC NUMBER");
+let btn=document.querySelector("#guessBtn")
+    btn.addEventListener("click",magicNumber)

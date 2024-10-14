@@ -1,0 +1,15 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(70, 68, 68);
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    color: white;
+}
+
+.hero h2{
+    font-size: 90px;
+    font-style: bold;
+}
+
