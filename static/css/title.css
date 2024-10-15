@@ -1,0 +1,12 @@
+.title{
+font-family:'inter-uniquifier';
+padding-bottom: 48px;
+margin-top: 144px;
+flex-direction: column;
+}
+
+.title h2{
+    font-size: 50px;
+    font-weight:bold;
+    line-height: auto;
+}
