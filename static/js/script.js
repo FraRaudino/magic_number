@@ -37,7 +37,7 @@ function magicNumber(event){
     if(nTentativi===0 && !Indovinato)
     {
         console.log("Hai esaurito i tentativi!")
-        console.log("Il numero era"+ nGenerato)
+        console.log("Il numero era" + nGenerato)
     }
 
 }
