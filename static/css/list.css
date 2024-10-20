@@ -1,7 +1,13 @@
 .list{
-    font-family: 'ineter-uniquifier';
+    font-family: 'Inter';
     font-size: 16px;
     line-height:auto;
     justify-content: center;
     align-items: center;
+    width: 548px;
+    margin-bottom: 80px;
+}
+
+ul, ol{
+    margin-bottom: 0px;
 }

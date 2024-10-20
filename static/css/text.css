@@ -1,7 +1,46 @@
-.text{
-    font-family: 'inetr-uniquifier';
+.text1{
+    font-family: 'Inter';
     font-size: 16px;
     line-height: auto;
-    padding-top: 80px;
     padding-bottom: 3px;
 }
+
+#text2{
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+    margin-top: 18px;
+}
+
+#text3{
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+    margin-bottom: 145px;
+}
+
+#guess{
+    width: 350px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+    border-style: hidden;
+}
+
+#guessBtn{
+    width:350px;
+    height: 60px;
+    background: #3AE3A8;
+    border-radius: 5px;
+    font-family: 'inter';
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000;
+    border-style: hidden;
+    font-weight: bold;
+    margin-top: 18px;
+}
+

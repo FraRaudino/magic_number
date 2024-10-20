@@ -3,3 +3,7 @@
 @import "list.css";
 @import "text.css";
 @import "commons.css";
+
+body{
+    background-color: #ccffc5;
+}

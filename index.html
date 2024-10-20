@@ -22,13 +22,11 @@
                 <li>Il tuo obiettivo è indovinare questo numero segreto nel minor numero di tentativi possibile.</li> 
                 <li>Ad ogni tentativo, inserisci un numero e il computer ti darà un indizio:</li> 
             </ol>
-
             <ul>
                 <li>Se il tuo numero è troppo basso, ti dirà "Troppo basso, prova un numero più alto!"</li>
                 <li>Se il tuo numero è troppo alto, ti dirà "Troppo alto, prova un numero più basso!"</li>
                 <li>Se indovini il numero esatto, vincerai la partita!</li>
             </ul>
-            
             <ol>
                 <li>Continua a fare tentativi finché non indovini il numero magico.</li>
                 <li>Alla fine del gioco, ti verrà mostrato il numero di tentativi che hai impiegato per indovinare.</li>
@@ -37,11 +35,18 @@
         </div>
 
 
-        <div class="text">
+        <div class="text1">
             <p>
                 Inserisci il numero magico
             </p>
         </div>
+        <form action="" method="get">
+            <input type="number" name="guess" id="guess"><br>
+            <input type="button" name="btn" id="guessBtn" value="indovina">
+        </form>
+
+        <div id="text2">Non hai ancora inserito un numero</div>
+        <div id="text3">Hai a disposizione 5 tentativi</div>
 
     </section>
 
