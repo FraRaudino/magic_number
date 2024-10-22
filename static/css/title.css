@@ -1,11 +1,10 @@
 .title{
-font-family:'Inter';
+font-family:'Inter', sans-serif;
 padding-bottom: 48px;
 margin-top: 144px;
 flex-direction: column;
 display: flex;
 align-items: center;
-margin-top: 150px;
 
 }
 
