@@ -4,3 +4,29 @@ justify-content: center;
 flex-direction: column;
 align-items: center;
 }
+
+.greenbg{
+    background-color: #ccffc5;
+}
+
+.yellowbg{
+    background-color: yellow;
+}
+
+.redbg{
+    background-color: red;
+}
+
+.greenBtn{
+    background-color: #aae7a2;
+}
+.redBtn{
+    background-color: rgb(204, 102, 102);
+}
+.yellowBtn{
+    background-color: rgb(228, 228, 109);
+}
+
+.transition{
+    transition: all 2s;
+}

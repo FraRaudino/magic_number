@@ -40,12 +40,23 @@ function magicNumber(event){
         console.log("HAI VINTO!!!");
         Indovinato=true;
         elem1.innerHTML=`Bravo, hai vinto!!`;
-        elem2.innerHTML=`Hai usato <strong>${nTentativi}</strong> tentativi`
+        elem2.innerHTML=`Hai usato <strong>${6-nTentativi}</strong> tentativi`
     }
     if(nTentativi===0 && !Indovinato)
     {
         elem1.innerHTML=`Mi dispiace hai esaurito i tentativi!!`;
         elem2.innerHTML=`Il numero era <strong>${nGenerato}</strong>`
+        bg.classList.remove("yellowbg")
+        bg.classList.add("redbg")
+        btn.classList.remove("yellowBtn")
+        btn.classList.add("redBtn")
+
+    }else if(nTentativi<3)
+    {
+        bg.classList.remove("greenbg")
+        bg.classList.add("yellowbg")
+        btn.classList.remove("greenBtn")
+        btn.classList.add("yellowBtn")
     }
 
 }
@@ -56,7 +67,8 @@ let nGenerato=generateRandomNumber();
 let n;
 let elem1=document.querySelector("#text2")
 let elem2=document.querySelector("#text3")
+let bg=document.querySelector("#background")
+let btn=document.querySelector("#guessBtn")
 
 console.log("BENVENUTO A MAGIC NUMBER");
-let btn=document.querySelector("#guessBtn")
-    btn.addEventListener("click",magicNumber)
+btn.addEventListener("click",magicNumber)
